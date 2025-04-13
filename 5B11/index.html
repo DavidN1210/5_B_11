@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        //let colores = ["rojo", "verde"];
+        //colores.push("azul");
+        //console.log(colores);
+
+        let cursos = ["1ESO", "2ESO", "BACH1", "BACH2"];
+        //cursos.splice(1,2); //splice() - Elimina un elemento por su índice. En este caso borra 2 elementos a partir de la posicion 1 (borraría 2ESO y BACH1)
+        //cursos.shift(); //shift() - Elimina el primer elemento
+        //cursos.unshift("2DAW"); // unshift() - Agrega un elemento al inicio
+        //cursos.pop(); //Pop es un metodo del array que elimina el último elemento del array
+        //cursos.push("1DAW"); //Push añade elementos al array
+        //cursos.forEach (cursos => alert(curso)); // For Each sirve para recorrer arrays y va a ejecutar una acción (en este caso alert) por cada elemento del array
+        // for (curso of cursos){  // = ForEach
+        //     alert(curso);
+        // }
+        // cursos.map (curso => curso + "Bosco"); // Map transforma el array. En este caso, le añado a cada elemento la palabra Bosco
+        // let cursoBuscado = cursos.findIndex(curso => curso=="2ESO"); // findIndex busca un elemento y devuelve su índice
+        // if(cursoBuscado==-1){
+        //     alert("NO ENCONTRADO");
+        // } else {
+        //     alert(cursoBuscado);
+        // }
+        // cursos.sort(); // SORT ordena el array
+        // cursos.reverse(); // REVERSE ordena el array al revés
+        // cursos.forEach (c => alert(c)); // Muestro el resultado del nuevo orden
+
+        let alumnos = [
+            {nombre:"Juan", edad:18},
+            {nombre:"María", edad:23},
+            {nombre:"Pepe", edad:15},
+            {nombre:"Manuel", edad:17}
+        ]
+        let alumnosMayores = alumnos.filter(alumno=>alumno.edad>17); // Filter muestra los elemntos de un array que cumplen una condicion. En este caso que sean mayores de 17
+        alumnosMayores.forEach(a=>alert(a.nombre));
+        
+
+    </script>
+
+    
+</body>
+</html>
